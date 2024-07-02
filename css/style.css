@@ -72,9 +72,79 @@ nav ul li{
     margin: 0 5px;
 }
 
+ul .btn{
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #aa9166;
+    margin: 20px 5px;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #aa9166;
+    background: rgba(0,0,0,0.7);
+    transition: 0.3s;
+    transition-delay: 0s;
+}
+
+ul .btn:hover {
+    color: #121518;
+}
+
+ul .btn .btn_txt{
+    position: relative;
+    z-index: 100;
+}
+
+ul .btn::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #aa9166;
+    box-shadow: 5px -8px 0 #aa9166, 5px 8px 0 #aa9166;
+    transition: width 0.3s, left 0.3s, height 0.3s,box-shadow 0.3s;
+    transition-delay: 0.2s,0.2s,0s,0s;
+}
+
+ul .btn:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #aa9166, 5px 0 0 #aa9166;
+    transition-delay: 0s,0s,0.3s,0.3s;
+}
+
+ul .btn::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #aa9166;
+    box-shadow: -5px -8px 0 #aa9166, -5px 8px 0 #aa9166;
+    transition: width 0.3s, right 0.3s, height 0.3s,box-shadow 0.3s;
+    transition-delay: 0.2s,0.2s,0s,0s;
+}
+
+ul .btn:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #aa9166, -5px 0 0 #aa9166;
+    transition-delay: 0s,0s,0.3s,0.3s;
+}
+
 nav ul li a{
     color: #aa9166;
-    font-size: 18px;
+    font-size: 15px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
