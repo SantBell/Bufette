@@ -12,6 +12,15 @@
     font-family: consolas;
 }
 
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-image: url("../img/faqs.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
 h1,
 h2, 
 h3, 
@@ -33,12 +42,12 @@ a {
     position: relative;
     width: 100%;
     max-width: 98%;
-    background: #ffffff;
+    background: #ffffffc4;
     margin: 10px;
 }
 
 nav{
-    background: #1215184a !important;
+    background: #121518 !important;
     height: 80px;
     width: 100%;
 }
@@ -641,6 +650,13 @@ li a.active, li a:hover{
     text-align: justify;
 }
 
+.about .about-text p span{
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #aa9166;
+}
+
 .timeline .about-text p{
     font-size: 20px;
 }
@@ -704,7 +720,7 @@ li a.active, li a:hover{
     position: relative;
     width: 100%;
     text-align: center;
-    background: #121518;
+    background: #121518ad;
     margin-bottom: 30px;
 }
 
